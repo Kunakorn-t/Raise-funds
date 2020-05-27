@@ -96,7 +96,7 @@ contract Project {
         Oracle eth = Oracle(0xa24dF0420dE1f3b8d740A52AAEB9d55d6D64478e);
         (bytes32 ethUsd,,) = eth.query.value(eth.queryPrice())("SPOTPX/ETH-USD");
         
-        return getMoney = (5000 * (uint256(thbUsd) * 1e18 / (uint256(ethUsd) + 80000000000000000000)));
+        return getMoney = (5000 * (uint256(thbUsd) * 1e18 / (uint256(ethUsd)) ));
         
     } 
     
